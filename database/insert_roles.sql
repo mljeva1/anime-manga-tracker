@@ -1,0 +1,4 @@
+INSERT INTO roles (role_name, created_at, updated_at) VALUES
+('Admin', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('User', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+COMMIT;
