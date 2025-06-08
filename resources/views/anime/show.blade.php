@@ -117,11 +117,10 @@
                                 <div class="info-item">
                                     <span class="info-label">Members:</span> {{ number_format($anime['members'] ?? 0) }}
                                 </div>
-                                @if($anime['trailer']['url'] ?? null)
-                                    <a href="{{ $anime['trailer']['url'] }}" class="btn btn-outline-light btn-sm" target="_blank">
-                                        Trailer <i class="bi bi-box-arrow-up-right"></i>
-                                    </a>
-                                @endif
+                                <a href="https://aniwatchtv.to/search?keyword={{ str_replace(' ', '+', $anime['title_english']) }}" 
+                                class="btn btn-outline-light btn-sm" target="_blank">
+                                    <i class="bi bi-play-fill me-2"></i>Gledaj online
+                                </a>
                                 <!-- Reviews gumb -->
                                 <button type="button" class="btn btn-outline-light btn-sm me-3" data-bs-toggle="modal" data-bs-target="#reviewsModal">
                                     <i class="bi bi-chat-square-text me-2"></i>Reviews
